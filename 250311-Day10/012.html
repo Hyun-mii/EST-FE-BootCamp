@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상 클래스 심화</title>
+    <style>
+        /* 포커스 선택자 */
+        button:focus {
+            background-color: yellow;
+        }
+
+        button:focus-visible {
+            border: solid 3px red;
+        }
+        .form-group {
+    margin-bottom: 15px;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+    border: 1px solid #ddd;
+    }   
+
+.form-group:focus-within {
+    background-color: #e0f7fa;
+    border-color: #26c6da;
+    }
+
+    </style>
+</head>
+<body>
+    <button>button</button>
+
+    <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" />
+    </div>
+</body>
+</html>
