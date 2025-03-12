@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>텍스트 꾸미기기</title>
+    <style>
+        p{
+            /* 폰트 크기 조정 */
+            font-size: 16px;
+            font-size: 2rem;
+            font-size: 2em;
+
+            font-weight: bold;
+            font-weight: 900;
+
+            
+            /* 기본값은 none */
+            /* 모든 문자를 대문자로 */
+            text-transform: uppercase;
+            /* 모든 문자를 소문자로 */
+            text-transform: lowercase;
+            /* 단어의 첫문자를 대문자로 */
+            text-transform: capitalize;
+        }
+        span{
+            /* 폰트 사이즈 키워드 */
+            font-size: xx-small;
+            font-size: smaller;
+            font-size: large;
+            /* text-decoration-color: blue;
+                text-decoration-line: overline underline;
+                text-decoration-style: double;
+                text-decoration-thickness: 5px; */
+                /* 위 아래가 같은 스타일 */
+                text-decoration: blue overline underline double 5px;
+
+                /* 가로거리 세로거리 번짐정도 색상 */
+                text-shadow: 10px 10px 5px gray, -10px -10px 5px gray;
+            
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi maiores sequi quo ab animi possimus quisquam quae eum porro beatae qui nihil, sapiente corporis minima, explicabo, amet voluptates assumenda tempora.
+        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus voluptas, quae veniam corrupti labore quaerat similique neque? Consequuntur adipisci quibusdam fugiat aliquid cupiditate rerum nihil dicta minus et a! Corrupti?</span>
+    </p>
+</body>
+</html>
