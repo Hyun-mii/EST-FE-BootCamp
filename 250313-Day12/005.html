@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background-clip 실습</title>
+    <style>
+        div{
+            width: 500px;
+            height: 500px;
+            border: dotted 30px black;
+            background-color: lightblue;
+
+            background-clip: border-box;
+
+            padding: 40px;
+            background-clip: padding-box;
+            background-clip: content-box;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
