@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex 레이아웃 실습</title>
+    <style>
+        body{
+            color: white;
+            width: 400px;
+            text-align: center;
+            
+        }
+        header{
+            background-color: lightcoral;
+            height: 100px;
+            line-height: 80px;
+            box-sizing: border-box;
+            border: 10px solid rgb(7, 60, 67);
+            
+
+        }
+        .container{
+            display: flex;
+            
+        }
+        section{
+            background-color: lightblue;
+            flex-direction: row;
+            flex-basis: 300px;
+            height: 250px;
+            line-height: 250px;
+            box-sizing: border-box;
+            border-left: 10px solid rgb(7, 60, 67);
+            border-right:10px solid rgb(7, 60, 67);
+
+        }
+        aside{
+            background-color: lightskyblue;
+            flex-direction: row;
+            flex-basis: 100px;
+            line-height: 250px;
+            box-sizing: border-box;
+            border-right:10px solid rgb(7, 60, 67);
+        }
+        footer{
+            background-color:darkorchid;
+            height: 100px;
+            line-height: 80px;
+            box-sizing: border-box;
+            border:10px solid rgb(7, 60, 67);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <header>header</header>
+        <div class="container">
+            <section>section</section>
+            <aside>aside</aside>
+        </div>
+        <footer>footer</footer>
+    </div>
+</body>
+</html>
