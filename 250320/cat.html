@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cat 실습</title>
+    <style>
+        @keyframes move-cat{
+            0%{
+                transform: translate(0, 0);
+                background-image: url(./img/cat/1.png);
+
+            }
+            50%{
+                transform: translate(150px, 0);
+                background-image: url(./img/cat/2.png);
+            }
+            100%{
+                transform: translate(300px, 0);
+                background-image: url(./img/cat/3.png);
+            }
+        }
+        .cat{
+            width: 313px;
+            height: 436px;
+            
+            background-size: auto 100%;
+
+            animation-name: move-cat;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+
+
+        }
+    </style>
+</head>
+<body>
+    <div class="cat"></div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clock 실습</title>
+    <style>
+        @keyframes move-clock{
+            0%{
+                transform: rotate(0deg);
+        
+            }
+            100%{
+                transform: rotate(360deg);
+        
+            }
+
+        }
+        .container{
+            width: 200px;
+            height: 200px;
+            border: solid 10px lightsalmon;
+            border-radius: 50%;
+
+            position: relative;
+
+        }
+        .container div{
+            width: 5px;
+            height: 80px;
+            background-color: black;
+
+            position: absolute;
+            top: 25px;
+            left: 50%;
+            transform: translateX(-50%);
+
+            animation-name: move-clock;
+            transform-origin: center bottom;
+            animation-iteration-count: infinite;
+            animation-timing-function: steps(60);
+
+        }
+        .container .hour{
+            background-color: rgb(228, 87, 108);
+            animation-duration: 200s;
+            height: 40px;
+            top: 60px
+
+        }
+        .container .min{
+            background-color: rgb(228, 123, 138);
+            animation-duration: 60s;
+            height: 60px;
+            top: 40px;
+
+        }
+        .container .sec{
+            background-color: lightpink;
+            animation-duration: 1s;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hour"></div>
+        <div class="min"></div>
+        <div class="sec"></div>
+    </div>
+</body>
+</html>
