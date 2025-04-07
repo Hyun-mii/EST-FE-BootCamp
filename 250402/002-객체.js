@@ -86,5 +86,5 @@ const profile = {
         console.log("안녕하세요!"); 
     },
 };
-console.log('이름은 ${profile.name}, 취미는 ${profile[hobby]} 입니다');
+console.log(`이름은 ${profile.name}, 취미는 ${profile["hobby"]} 입니다`);
 profile.greet();
