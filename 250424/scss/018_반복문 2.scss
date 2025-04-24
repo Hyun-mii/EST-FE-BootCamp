@@ -1,0 +1,8 @@
+// 잘 사용하지 않음.
+$color-palette: blue, green, red, yellow;
+
+@each $color in $color-palette {
+    .item-#{$color} {
+        color: $color;
+    }
+}
